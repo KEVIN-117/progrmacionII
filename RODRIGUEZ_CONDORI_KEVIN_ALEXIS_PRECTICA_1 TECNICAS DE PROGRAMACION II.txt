@@ -1,0 +1,122 @@
+            PRACTICA 1  
+ TECNICAS DE PROGRAMACION II (SIS-211) 
+ 
+ Nombre del Estudiante: Rodriguez Condori Kevin Alexis.       CI: 8514507 
+ Entregado en fecha: 13 de septiembre 2021  
+
+PREGUNTA 1.-
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class EXAMPLE_1 
+{
+	public static void main(String[] args) {
+		Scanner numbers = new Scanner(System.in);
+		System.out.println("");
+		int numberOne= numbers.nextInt();
+		System.out.println("");
+		int numberTwo= numbers.nextInt();
+		System.out.println("");
+		int numberThree= numbers.nextInt();
+		int[] numeros ={numberOne, numberTwo, numberThree};
+		Arrays.sort(numeros);
+		for(int i=numeros.length-1; i>=0; i--) {
+			System.out.print(" "+ numeros[i]);
+		}
+	}
+}
+
+
+PREGUNTA 2.-
+
+import java.util.Scanner;
+public class Example_2 {
+	public static void main(String[] args) {
+		Scanner n= new Scanner(System.in);
+		System.out.print("");
+		int nota=n.nextInt();
+		if(nota<5) {
+			System.out.print("insuficiente");
+		}if(nota==5) {
+			System.out.print("suficiente");
+		}if(nota==6) {
+			System.out.print("bien");
+		}if(nota==7 && nota<=8) {
+			System.out.print("notable");
+		}if(nota>8) {
+			System.out.print("sobresaliente");
+		}
+	}
+}
+
+
+
+PREGUNTA 3.-
+import java.util.Scanner;
+public class EXAMPLE_3 {
+	public static void main(String[] args) {
+		Scanner numeros = new Scanner(System.in);
+		int sumaPatos=0, sumaNopatos=0;
+		int numerosSuma;
+		System.out.print("");
+		int numerosN = numeros.nextInt();
+		for(int i = 1; i <= numerosN; i++) {
+			System.out.print("");
+			numerosSuma= numeros.nextInt();
+			if(numerosSuma%2==0 && numerosSuma>10) {
+				sumaPatos += numerosSuma;
+			}
+			if(numerosSuma%2!=0 || numerosSuma<10) {
+				sumaNopatos +=numerosSuma;
+			}
+		}
+		System.out.print(sumaPatos);
+		System.out.print(" " + sumaNopatos);
+	}
+}
+
+
+
+PREGUNTA 4.-
+
+PREGUNTA 5.-
+
+import java.util.Scanner;
+
+public class EXAMPLE_5 {
+	public static void main(String[] args) {
+		Scanner reader= new Scanner(System.in);
+		System.out.print("");
+		int numero= reader.nextInt();
+		int divisores=0;
+		for(int i=1; i<=numero; i++) {
+			if(numero%i==0) {
+				divisores++;
+			}
+		}if(divisores==2) {
+			System.out.print("PRIMO");
+		}else {
+			System.out.print("NO PRIMO");
+		}
+	}
+}
+
+
+
+PREGUNTA 6.-
+
+PREGUNTA 7.-
+
+import java.util.Scanner;
+public class EXAMPLE_7 {
+	public static void main(String[] args) {
+		Scanner n=new Scanner (System.in);
+		System.out.print("");
+		int number=n.nextInt();
+		int num_1=0; int num_2=1; int sum = 0;
+		for(int i=1; i<=number; i++) {
+			num_1=num_2; num_2=sum; sum=num_1 + num_2;
+			System.out.print( sum +" ");
+		}
+	}
+}

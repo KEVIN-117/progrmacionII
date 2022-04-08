@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Example_2.java&apos; to &apos;new/src&apos;&#x0D;&#x0A;- Original project: &apos;PRACTICA_6_SIS-211_AUX&apos;&#x0D;&#x0A;- Destination element: &apos;new/src&apos;&#x0D;&#x0A;- Original element: &apos;Example_2.java&apos;" description="Copy compilation unit" destination="=new/src" element1="/src&lt;{Example_2.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1646751043385" units="1" version="1.0"/>
+</session>
